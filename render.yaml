@@ -1,7 +1,6 @@
 services:
   - type: web
     name: distance-api
-    env: python
-    buildCommand: ""
+    runtime: python
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
-    plan: free
